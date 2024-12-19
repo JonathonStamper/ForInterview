@@ -1,0 +1,68 @@
+
+
+.HomeFlex[b-wg0zf8rip3]{
+       display: flex;
+       gap: 20px;
+       flex-wrap: wrap;
+       /* justify-content: center ; */
+}
+
+.Project[b-wg0zf8rip3]{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+a[b-wg0zf8rip3]{
+    text-decoration: none;
+
+}
+
+
+
+.projectinfoCard[b-wg0zf8rip3]{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    min-width: 45%;
+    max-width: 45%;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #7b81b989;
+    padding: 24px;
+    overflow-y: scroll;
+    /* color:white */
+}
+
+.ElipseText[b-wg0zf8rip3]{
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    min-width: 340px;
+    max-width: 340px;
+    height: 1.2em; 
+    white-space: nowrap;}
+
+@keyframes HoverAnimation-b-wg0zf8rip3 {
+    0%{
+        /* transform: scale(1); */
+        height: 100px
+    }
+
+    100%{
+        /* transform: scale(1.2); */
+        height: 300px
+
+    }
+}
+
+h1[b-wg0zf8rip3]{
+    text-shadow: 2px 2px;
+}
+
+/* .ProjectCard:hover{
+   animation: HoverAnimation 0.3s both 0s 1;
+   text-overflow: clip;
+  
+   white-space: wrap;
+} */
+

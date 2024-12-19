@@ -1,0 +1,68 @@
+
+
+.HomeFlex{
+       display: flex;
+       gap: 20px;
+       flex-wrap: wrap;
+       /* justify-content: center ; */
+}
+
+.Project{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+
+.projectinfoCard{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    min-width: 45%;
+    max-width: 45%;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #7b81b989;
+    padding: 24px;
+    overflow-y: scroll;
+    /* color:white */
+}
+
+.ElipseText{
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    min-width: 340px;
+    max-width: 340px;
+    height: 1.2em; 
+    white-space: nowrap;}
+
+@keyframes HoverAnimation {
+    0%{
+        /* transform: scale(1); */
+        height: 100px
+    }
+
+    100%{
+        /* transform: scale(1.2); */
+        height: 300px
+
+    }
+}
+
+h1{
+    text-shadow: 2px 2px;
+}
+
+/* .ProjectCard:hover{
+   animation: HoverAnimation 0.3s both 0s 1;
+   text-overflow: clip;
+  
+   white-space: wrap;
+} */
+

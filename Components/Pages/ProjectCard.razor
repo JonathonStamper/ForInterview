@@ -1,0 +1,32 @@
+ @using ForInterview.Models
+ 
+  <div class="projectinfoCard ">
+        <h3 class=""> @projectinfo.Title</h3>
+        <div class="flex">
+            <b>Description:</b>
+        <p class="">@projectinfo.Description</p>
+        </div> 
+
+        <div class="flex">
+            <b>Technologies:</b>
+        <p class="">@projectinfo.Language</p>
+        </div>
+
+        <div class="s">
+            <b>Site url:</b>
+        @if( !(@projectinfo.SiteURL.Contains("no")) && !(@projectinfo.SiteURL.Contains("private"))){
+        <a class="" href="@projectinfo.SiteURL">@projectinfo.SiteURL</a>
+        }
+
+        else{
+        <p>@projectinfo.SiteURL</p>
+        }
+
+        </div>
+        
+        </div>
+
+        @code{
+            [Parameter]
+            public Project projectinfo { get; set; }
+        }

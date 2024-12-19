@@ -1,0 +1,40 @@
+﻿@page "/"
+@using ForInterview.Models
+@using ForInterview.Services
+@inject IProjectService ProjectService
+@attribute [StreamRendering]
+
+<PageTitle>Jonathon Stamper</PageTitle>
+
+<h1>Project Overview</h1>
+<p>Here are some of the projects I've worked on in the past year</p>
+
+<section class="Project mb-3">
+
+<div class="HomeFlex">                                                                                                                                                                                                                                                                                                                    
+
+@if(Projects is null){
+<h1>Loading.... 🔃 </h1>
+}
+
+else{
+    @foreach(Project project in Projects){
+        <ProjectCard projectinfo="@project"/>
+        
+    }
+
+        
+    }
+}
+</div>
+</section>
+
+@code{
+    List<Project>? Projects = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Projects = ProjectService?.GetProjects();
+    }
+
+}
